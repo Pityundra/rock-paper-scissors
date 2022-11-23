@@ -1,8 +1,10 @@
 import sys
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QFileDialog, QMessageBox
-from PyQt5 import uic  # Itt lehet egy error ha Pycharm-ot hsználunk, de ettől műkösni fog
+from PyQt5 import uic  # Itt lehet egy error ha Pycharm-ot hsználunk, de ettől működni fog
 from PyQt5 import QtGui
+
+import preprocess
 
 
 class Ui(QtWidgets.QMainWindow):
@@ -21,6 +23,8 @@ class Ui(QtWidgets.QMainWindow):
         self.image.setPixmap(QtGui.QPixmap(img))
 
         wrong_image = False  # Ennek a változónak az értékét kelle átállítani ha nem megfelelő a kép
+
+        preprocess.get_skin_regions(img)
 
 
         if wrong_image:
