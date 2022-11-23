@@ -24,7 +24,7 @@ class Ui(QtWidgets.QMainWindow):
 
         wrong_image = False  # Ennek a változónak az értékét kelle átállítani ha nem megfelelő a kép
 
-        preprocess.get_skin_regions(img)
+        print(len(preprocess.get_skin_regions(img)))
 
 
         if wrong_image:
