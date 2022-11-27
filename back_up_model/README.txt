@@ -1,0 +1,1 @@
+ez a tip azt a célt szólgálja ha meta adatos ai_save fileok nem müködnének akkor erre kicserélve müködnie kelleni, úgyan azok a fileok
